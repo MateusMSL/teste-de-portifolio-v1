@@ -1,0 +1,215 @@
+    #background{
+        position: absolute;
+        z-index: 0;
+        height: 517px;
+        background: rgb(145,107,191);
+        background: linear-gradient(77deg, rgba(145,107,191,1) 14%, rgba(28,12,91,1) 74%);
+        
+    }
+    #bottom_wave{
+        position: absolute;
+        z-index: 1;
+        float: left;
+        margin-top: 217px;
+        background-image: url(img/bottom_wave.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    #part_01{
+
+        height: 50px;
+        color: #fff;
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    #part_02{
+
+        height: 60px;
+        display: flex;
+        align-items: left;
+    }
+
+    #part_03{
+        height: 90px;
+    }
+    .text_format_01{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 0;
+        font-family: Font_01;
+    }
+
+    #mobile_fix_05{
+        display: none;
+    }
+
+    #mobile_fix_06{
+        display: none;
+    }
+
+    .wrapper{
+        float: left;
+        display: inline-flex;
+    }
+    .wrapper .texto-base{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .wrapper .texto-secundario{
+        height: 42px;
+        line-height: 50px;
+        overflow: hidden; 
+        
+        
+    }
+
+    .texto-secundario li{
+        
+        color: rgb(124, 235, 255);
+        list-style: none;
+        font-size: 36px;
+        font-weight: 700;
+        position: relative;
+        top: 0;
+        animation: slide 7s steps(7) infinite;
+    }
+    @keyframes slide {
+        100%{
+            top: -360px;
+        }
+    }
+    
+    .texto-secundario li span{
+        position: relative;
+    }
+
+    .texto-secundario li span::after{
+        
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #1c0c5b;
+        border-left: 2px solid rgb(255, 255, 255);
+        animation: typing 1s steps(11) infinite;
+    }
+    @keyframes typing {
+        100%{
+            left: 100%;
+            margin: 0 -35px 0 20px;
+        }
+    }
+
+    #Conhecimento_01{color: rgb(255, 119, 0);}
+    #Conhecimento_02{color: rgb(114, 196, 255);}
+    #Conhecimento_03{color: rgb(255, 223, 40);}
+    #Conhecimento_04{color: rgb(255, 255, 255);}
+    #Conhecimento_05{color: rgb(51, 127, 189);}
+    #Conhecimento_06{color: rgb(239, 207, 138);}
+    #Conhecimento_07{color: rgb(255, 144, 251);}
+
+    .button_config{
+        float: left;
+        margin-top: 10px;
+        margin-right: 20px;
+
+    }
+
+    @media only screen and (max-width: 400px) {
+    
+        #background{
+            background: rgb(145,107,191);
+            background: linear-gradient(11deg, rgba(145,107,191,1) 14%, rgba(28,12,91,1) 74%);
+            height: 1200px;
+        }
+
+        #bottom_wave{
+            display: none;
+        }
+
+        #part_01{
+            display: block;
+            width: 80%;
+            text-align: center;
+        }
+        #part_02{
+            display: block;
+            margin-top: 60px;
+            text-align: center;
+        }
+        #part_03{
+            display: block;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        .text_format_01{
+            font-size: 30px;
+        }
+        #part_04{
+            display: block;
+            margin-top: 450px;
+            float: left;
+        }
+
+        #mobile-fix_02{
+            position: absolute;
+            margin-top: 160px;
+            margin-left: 40px;
+        }
+
+        #mobile_fix_03{
+            display: none;
+        }
+        #mobile_fix_04{
+            display: none;
+        }
+
+        #mobile_fix_05{
+            display: block;
+            margin: 0 auto;
+            margin-right: 30px;
+        }
+        #mobile_fix_06{
+            display: block;
+            margin: 0 auto;
+        }
+
+        
+
+       
+    
+    }
+
+    @font-face {
+    font-family: Font_01;
+    src: url(fonts/Fluff.ttf);
+    }
+  
+    ::selection {
+    color: rgb(85, 85, 85);
+    background: rgb(255, 255, 255);
+    }
+
+
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+  
+    ::-webkit-scrollbar-track {
+    background: #ffffff;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+    background: rgb(223, 183, 255);
+    border-radius: 20px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(164, 54, 207);
+    }
